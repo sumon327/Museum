@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей «Наследие» — Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип музея «Наследие»" width="36" height="36">
+                <span>Музей «Наследие»</span>
+            </a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">Меню</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="plan.html">План</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn btn-small" aria-label="Переключить тему">Тёмная тема</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Контакты</h1>
+
+        <div class="two-col">
+            <section>
+                <h2>Как нас найти</h2>
+                <ul class="contact-list">
+                    <li><strong>Адрес:</strong> г. Алматы, ул. Саина, 123</li>
+                    <li><strong>Телефон:</strong> <a href="tel:+77073003693">+7 (707) 300 3693</a></li>
+                    <li><strong>Почта:</strong> <a href="mailto:a.kononenko@aues.kz">a.kononenko@aues.kz</a></li>
+                    <li><strong>Часы работы:</strong> вт–вс, 9:00–20:00. Понедельник — выходной.</li>
+                </ul>
+                <p>Ближайшая остановка — «Новый Музей», автобус 38.</p>
+            </section>
+
+            <section>
+                <h2>Написать нам</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-row">
+                        <label for="lastname">Фамилия *</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Иванов" autocomplete="family-name">
+                        <span class="error" id="lastname-error"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="firstname">Имя *</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Иван" autocomplete="given-name">
+                        <span class="error" id="firstname-error"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Почта *</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com">
+                        <span class="error" id="email-error"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Телефон *</label>
+                        <div class="phone-wrap">
+                            <span class="phone-prefix">+7</span>
+                            <input type="tel" id="phone" name="phone" inputmode="numeric" maxlength="10" placeholder="7771234567" autocomplete="tel-national">
+                        </div>
+                        <span class="error" id="phone-error"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="topic">Тема *</label>
+                        <input type="text" id="topic" name="topic" placeholder="Например, экскурсия для класса">
+                        <span class="error" id="topic-error"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                        <span class="error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                    <p id="form-success" class="success" role="status"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Музей «Наследие»</p>
+            <p>г. Алматы, ул. Саина, 123 · <a href="contacts.html">Контакты</a></p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

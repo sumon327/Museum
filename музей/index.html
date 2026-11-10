@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей «Наследие» — Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип музея «Наследие»" width="36" height="36">
+                <span>Музей «Наследие»</span>
+            </a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">Меню</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="plan.html">План</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn btn-small" aria-label="Переключить тему">Тёмная тема</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h1>Городской исторический музей «Наследие»</h1>
+            <p>В шести залах собрано больше трёх тысяч предметов: от находок кочевников до приборов, на которых учились наши деды. Чтобы не потеряться, можно выбрать маршрут по времени и интересам.</p>
+            <p class="today-info">Сегодня <span id="current-date"></span>, <span id="open-status"></span>.</p>
+            <a href="services.html" class="btn">Билеты и маршрут</a>
+            <button class="btn btn-outline" id="open-chat-hero">Задать вопрос помощнику</button>
+        </section>
+
+        <section class="section">
+            <h2>Залы</h2>
+            <ul class="hall-list">
+                <li>
+                    <img src="images/image1.svg" alt="Зал древности">
+                    <div>
+                        <h3>Зал древности</h3>
+                        <p>Археологические находки, украшения и предметы быта. Здесь начинается осмотр.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image2.svg" alt="Золотая галерея">
+                    <div>
+                        <h3>Золотая галерея</h3>
+                        <p>Ювелирные изделия и реликвии. На осмотр хватит минут двадцати.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image3.svg" alt="Детский интерактивный зал">
+                    <div>
+                        <h3>Детский зал</h3>
+                        <p>Можно трогать экспонаты, решать задания и «раскапывать» мини-раскопки. Рассчитан на детей от 6 лет.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="note">
+            <h2>Что ещё нужно знать</h2>
+            <ul>
+                <li>Работаем со вторника по воскресенье, с 9:00 до 20:00. Понедельник — выходной.</li>
+                <li>В первую пятницу месяца студентам вход бесплатный.</li>
+                <li>Есть гардероб, кафе и пандусы.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Музей «Наследие»</p>
+            <p>г. Алматы, ул. Саина, 123 · <a href="contacts.html">Контакты</a></p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

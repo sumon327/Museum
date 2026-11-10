@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей «Наследие» — Услуги</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип музея «Наследие»" width="36" height="36">
+                <span>Музей «Наследие»</span>
+            </a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">Меню</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html" class="active">Услуги</a></li>
+                    <li><a href="plan.html">План</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn btn-small" aria-label="Переключить тему">Тёмная тема</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Услуги</h1>
+
+        <section>
+            <div class="filter-bar">
+                <button class="btn btn-small filter-btn active" data-filter="all">Все</button>
+                <button class="btn btn-small filter-btn" data-filter="visit">Посещение</button>
+                <button class="btn btn-small filter-btn" data-filter="kids">Детям</button>
+                <button class="btn btn-small filter-btn" data-filter="events">Мероприятия</button>
+            </div>
+            <div id="services-grid">
+                <article class="card" data-category="visit">
+                    <img src="images/image1.svg" alt="Входной билет">
+                    <div>
+                        <h3>Входной билет</h3>
+                        <p>Свободное посещение всех залов в течение дня.</p>
+                        <p class="price">от 700 ₸</p>
+                    </div>
+                </article>
+                <article class="card" data-category="visit">
+                    <img src="images/image2.svg" alt="Экскурсия с гидом">
+                    <div>
+                        <h3>Экскурсия с гидом</h3>
+                        <p>Обзорная экскурсия, до 15 человек, 1,5 часа.</p>
+                        <p class="price">5 000 ₸ за группу</p>
+                    </div>
+                </article>
+                <article class="card" data-category="kids">
+                    <img src="images/image3.svg" alt="Детский мастер-класс">
+                    <div>
+                        <h3>Детский мастер-класс</h3>
+                        <p>Лепка, роспись и мини-раскопки для детей 6–12 лет.</p>
+                        <p class="price">2 500 ₸</p>
+                    </div>
+                </article>
+                <article class="card" data-category="events">
+                    <img src="images/image4.svg" alt="Аренда зала">
+                    <div>
+                        <h3>Аренда зала</h3>
+                        <p>Для лекций, презентаций и фотосессий.</p>
+                        <p class="price">от 40 000 ₸ в час</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Цены на билеты</h2>
+            <table>
+                <caption>Действуют в 2026 году</caption>
+                <thead>
+                    <tr><th>Категория</th><th>Кому</th><th>Цена</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Взрослый</td><td>от 18 лет</td><td>1 500 ₸</td></tr>
+                    <tr><td>Студент</td><td>по студенческому билету</td><td>700 ₸</td></tr>
+                    <tr><td>Ребёнок</td><td>от 6 до 17 лет</td><td>300 ₸</td></tr>
+                    <tr><td>Семейный</td><td>2 взрослых и до 3 детей</td><td>3 000 ₸</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="note" id="route-section">
+            <h2>Подобрать маршрут</h2>
+            <p>Укажите, сколько у вас времени и что интересно, и мы предложим, какие залы осмотреть.</p>
+            <form id="route-form" class="inline-form">
+                <label for="route-time">Время</label>
+                <select id="route-time">
+                    <option value="30">30 минут</option>
+                    <option value="60" selected>1 час</option>
+                    <option value="90">1,5 часа</option>
+                    <option value="120">2 часа</option>
+                </select>
+                <label for="route-interest">Интерес</label>
+                <select id="route-interest">
+                    <option value="all">Всё понемногу</option>
+                    <option value="history">История</option>
+                    <option value="art">Искусство</option>
+                    <option value="kids">Для детей</option>
+                    <option value="science">Наука и техника</option>
+                </select>
+                <button type="submit" class="btn">Показать</button>
+            </form>
+            <div id="route-result" class="route-result" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Музей «Наследие»</p>
+            <p>г. Алматы, ул. Саина, 123 · <a href="contacts.html">Контакты</a></p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

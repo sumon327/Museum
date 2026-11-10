@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей «Наследие» — План музея</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип музея «Наследие»" width="36" height="36">
+                <span>Музей «Наследие»</span>
+            </a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">Меню</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="plan.html" class="active">План</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn btn-small" aria-label="Переключить тему">Тёмная тема</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>План музея</h1>
+        <p>Схема примерная, без масштаба. Нажмите на зал, чтобы узнать, что в нём находится.</p>
+
+        <div class="filter-bar">
+            <button class="btn btn-small floor-btn active" data-floor="1">1 этаж</button>
+            <button class="btn btn-small floor-btn" data-floor="2">2 этаж</button>
+        </div>
+
+        <div class="plan-box">
+<svg id="floor-1" class="plan-svg" viewBox="0 0 760 400" role="img" aria-label="План 1 этажа">
+  <rect x="20" y="20" width="720" height="360" class="outer"/>
+  <text x="380" y="215" text-anchor="middle" class="rs">холл</text>
+  <g class="room hall" data-name="Зал древности" tabindex="0" role="button"><rect x="20" y="20" width="230" height="170"/><text x="135.0" y="104.0" text-anchor="middle" class="rt">Зал древности</text><text x="135.0" y="119.0" text-anchor="middle" class="rs">1 этаж</text></g><g class="room hall" data-name="Степные кочевники" tabindex="0" role="button"><rect x="20" y="190" width="230" height="190"/><text x="135.0" y="284.0" text-anchor="middle" class="rt">Степные кочевники</text><text x="135.0" y="299.0" text-anchor="middle" class="rs">1 этаж</text></g><g class="room hall" data-name="Детский интерактивный зал" tabindex="0" role="button"><rect x="510" y="20" width="230" height="200"/><text x="625.0" y="119.0" text-anchor="middle" class="rt">Детский интерактивный зал</text><text x="625.0" y="134.0" text-anchor="middle" class="rs">1 этаж</text></g><g class="room service" data-name="Кафе"><rect x="510" y="220" width="130" height="90"/><text x="575.0" y="270.0" text-anchor="middle" class="rt">Кафе</text></g><g class="room service" data-name="Туалет"><rect x="640" y="220" width="100" height="90"/><text x="690.0" y="270.0" text-anchor="middle" class="rt">Туалет</text></g><g class="room service" data-name="Гардероб"><rect x="510" y="310" width="230" height="70"/><text x="625.0" y="350.0" text-anchor="middle" class="rt">Гардероб</text></g><g class="room service" data-name="Лестница"><rect x="330" y="30" width="100" height="70"/><text x="380.0" y="70.0" text-anchor="middle" class="rt">Лестница</text></g><g class="room service" data-name="Вестибюль"><rect x="280" y="280" width="200" height="100"/><text x="380.0" y="329.0" text-anchor="middle" class="rt">Вестибюль</text><text x="380.0" y="344.0" text-anchor="middle" class="rs">касса, вход</text></g>
+<g class="entrance"><text x="380" y="396" text-anchor="middle" class="rs">▲ вход</text></g></svg>
+<svg id="floor-2" class="plan-svg" viewBox="0 0 760 400" role="img" aria-label="План 2 этажа" hidden>
+  <rect x="20" y="20" width="720" height="360" class="outer"/>
+  <text x="380" y="215" text-anchor="middle" class="rs">холл</text>
+  <g class="room hall" data-name="Золотая галерея" tabindex="0" role="button"><rect x="20" y="20" width="230" height="170"/><text x="135.0" y="104.0" text-anchor="middle" class="rt">Золотая галерея</text><text x="135.0" y="119.0" text-anchor="middle" class="rs">2 этаж</text></g><g class="room hall" data-name="Картинная галерея" tabindex="0" role="button"><rect x="20" y="190" width="230" height="190"/><text x="135.0" y="284.0" text-anchor="middle" class="rt">Картинная галерея</text><text x="135.0" y="299.0" text-anchor="middle" class="rs">2 этаж</text></g><g class="room hall" data-name="Наука и техника" tabindex="0" role="button"><rect x="510" y="20" width="230" height="200"/><text x="625.0" y="119.0" text-anchor="middle" class="rt">Наука и техника</text><text x="625.0" y="134.0" text-anchor="middle" class="rs">2 этаж</text></g><g class="room service" data-name="Зона отдыха"><rect x="510" y="220" width="130" height="160"/><text x="575.0" y="305.0" text-anchor="middle" class="rt">Зона отдыха</text></g><g class="room service" data-name="Туалет"><rect x="640" y="220" width="100" height="160"/><text x="690.0" y="305.0" text-anchor="middle" class="rt">Туалет</text></g><g class="room service" data-name="Лестница"><rect x="330" y="30" width="100" height="70"/><text x="380.0" y="70.0" text-anchor="middle" class="rt">Лестница</text></g><g class="room service" data-name="Лифт и пандус"><rect x="280" y="300" width="200" height="80"/><text x="380.0" y="345.0" text-anchor="middle" class="rt">Лифт и пандус</text></g>
+</svg>
+        </div>
+
+        <div id="plan-info" class="note" aria-live="polite">
+            <h2>Выберите зал на схеме</h2>
+            <p>Здесь появится описание, этаж и время осмотра.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Музей «Наследие»</p>
+            <p>г. Алматы, ул. Саина, 123 · <a href="contacts.html">Контакты</a></p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
